@@ -19,8 +19,8 @@ cd $(dirname $0)
 # NOTE: Need to run "gcloud auth configure-docker" before we can push the images to gcr.io
 
 # Build docker images & push them to container registry
-docker build -t gcr.io/grpc-loadbalancing-demo2018/greeter_client ../greeter-client && docker push gcr.io/grpc-loadbalancing-demo2018/greeter_client:latest
-docker build -t gcr.io/grpc-loadbalancing-demo2018/greeter_server ../greeter-server && docker push gcr.io/grpc-loadbalancing-demo2018/greeter_server:latest
-docker build -t gcr.io/grpc-loadbalancing-demo2018/greeter_server_balancer ../grpclb-server && docker push gcr.io/grpc-loadbalancing-demo2018/greeter_server_balancer:latest
-docker build -t gcr.io/grpc-loadbalancing-demo2018/greeter_envoy_static ../greeter-envoy-static && docker push gcr.io/grpc-loadbalancing-demo2018/greeter_envoy_static:latest
+docker build -t bosyotech/greeter_client ../greeter-client && docker push bosyotech/greeter_client:latest
+docker build -t bosyotech/greeter_server ../greeter-server && docker push bosyotech/greeter_server:latest
+docker build -t bosyotech/greeter_server_balancer ../grpclb-server && docker push bosyotech/greeter_server_balancer:latest
+docker build -t bosyotech/greeter_envoy_static ../greeter-envoy-static && docker push bosyotech/greeter_envoy_static:latest
 

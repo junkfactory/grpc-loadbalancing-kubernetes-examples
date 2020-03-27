@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
       - name: greeter-server
-        image: gcr.io/grpc-loadbalancing-demo2018/greeter_server:latest
+        image: bosyotech/greeter_server:latest
         ports:
         - containerPort: 8000
         env:
